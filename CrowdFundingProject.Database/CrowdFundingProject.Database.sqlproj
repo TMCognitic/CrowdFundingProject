@@ -57,9 +57,12 @@
   <ItemGroup>
     <Folder Include="Properties" />
     <Folder Include="Tables" />
+    <Folder Include="Procedures" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\Utilisateur.sql" />
     <Build Include="Tables\Projet.sql" />
+    <Build Include="Procedures\CSP_AjoutUtilisateur.sql" />
+    <Build Include="CSF_GetSalt.sql" />
   </ItemGroup>
 </Project>
