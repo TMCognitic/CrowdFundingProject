@@ -13,6 +13,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CrowdFunding.Tools\CrowdFunding.Tools.csproj" />
+    <ProjectReference Include="..\CrowdFundingProject.Bll\CrowdFundingProject.Bll.csproj" />
+    <ProjectReference Include="..\CrowdFundingProject.Dal\CrowdFundingProject.Dal.csproj" />
   </ItemGroup>
 
 </Project>

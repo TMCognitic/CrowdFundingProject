@@ -9,6 +9,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrowdFundingProject.Api", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrowdFunding.Tools", "CrowdFunding.Tools\CrowdFunding.Tools.csproj", "{18E23C0C-F913-4A90-87D2-6637CE5DC889}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00 Database", "00 Database", "{AF8652F6-6454-4F92-9A9B-6342CA75B353}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 Models", "01 Models", "{71C2F328-8CD9-4E22-B834-39052B7EEFE8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 Applications", "02 Applications", "{7998977E-BA42-4DBE-9B1B-EF5EFD09007F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "99 Tools", "99 Tools", "{CCBC5375-08BC-41D9-BD38-59CA2E080918}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrowdFundingProject.Dal", "CrowdFundingProject.Dal\CrowdFundingProject.Dal.csproj", "{69C0837D-E670-46CE-8BF4-7191A8A3509A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrowdFundingProject.Bll", "CrowdFundingProject.Bll\CrowdFundingProject.Bll.csproj", "{27C3025D-014E-492E-8A4B-6035E32664C1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,9 +41,24 @@ Global
 		{18E23C0C-F913-4A90-87D2-6637CE5DC889}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18E23C0C-F913-4A90-87D2-6637CE5DC889}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18E23C0C-F913-4A90-87D2-6637CE5DC889}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69C0837D-E670-46CE-8BF4-7191A8A3509A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69C0837D-E670-46CE-8BF4-7191A8A3509A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69C0837D-E670-46CE-8BF4-7191A8A3509A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69C0837D-E670-46CE-8BF4-7191A8A3509A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27C3025D-014E-492E-8A4B-6035E32664C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27C3025D-014E-492E-8A4B-6035E32664C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27C3025D-014E-492E-8A4B-6035E32664C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27C3025D-014E-492E-8A4B-6035E32664C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{10D07A6D-2684-4CFF-954C-DE0531748F66} = {AF8652F6-6454-4F92-9A9B-6342CA75B353}
+		{92DFF6B0-F1FE-4D08-9135-209EB06B273F} = {7998977E-BA42-4DBE-9B1B-EF5EFD09007F}
+		{18E23C0C-F913-4A90-87D2-6637CE5DC889} = {CCBC5375-08BC-41D9-BD38-59CA2E080918}
+		{69C0837D-E670-46CE-8BF4-7191A8A3509A} = {71C2F328-8CD9-4E22-B834-39052B7EEFE8}
+		{27C3025D-014E-492E-8A4B-6035E32664C1} = {71C2F328-8CD9-4E22-B834-39052B7EEFE8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {56FC4EF6-E0F8-4238-9BBA-58F9DE039309}

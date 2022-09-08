@@ -1,3 +1,5 @@
+using CrowdFundingProject.Bll.Services;
+using CrowdFundingProject.Dal.Services;
 using System.Data.Common;
 using System.Data.SqlClient;
 
@@ -29,7 +31,6 @@ namespace CrowdFundingProject.Api
 
             app.UseAuthorization();
 
-
             app.MapControllers();
 
             app.Run();
@@ -39,6 +40,8 @@ namespace CrowdFundingProject.Api
         {
             services.AddControllers();
             services.AddScoped<DbConnection>(sp => new SqlConnection(configuration.GetConnectionString("CrowdFundingProjectDb")));
+            services.AddScoped<AuthService_Dal>();
+            services.AddScoped<AuthService_Bll>();
         }
     }
 }

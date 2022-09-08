@@ -1,5 +1,6 @@
 ﻿using CrowdFunding.Tools.Database;
 using CrowdFundingProject.Api.Models.Forms;
+using CrowdFundingProject.Bll.Services;
 using Microsoft.AspNetCore.Mvc;
 using System.Data.Common;
 
@@ -10,12 +11,12 @@ namespace CrowdFundingProject.Api.Controllers
     public class AuthController : ControllerBase
     {
         private readonly ILogger _logger;
-        private readonly DbConnection _connection;
+        private readonly AuthService_Bll _authService;
 
-        public AuthController(ILogger<AuthController> logger, DbConnection connection)
+        public AuthController(ILogger<AuthController> logger, AuthService_Bll authService)
         {
             _logger = logger;
-            _connection = connection;
+            _authService = authService;
         }
 
         [HttpPost]
@@ -25,7 +26,7 @@ namespace CrowdFundingProject.Api.Controllers
 
             try
             {
-                _connection.ExecuteNonQuery("CSP_AjoutUtilisateur", true, new { Nom = form.Nom, Prenom = form.Prenom, Email = form.Email, Passwd = form.Passwd });
+                _authService.AjoutUtilisateur(new Bll.Entities.Utilisateur_Bll(form.Nom, form.Prenom, form.Email, form.Passwd));
                 return NoContent();
             }
             catch (Exception ex)
