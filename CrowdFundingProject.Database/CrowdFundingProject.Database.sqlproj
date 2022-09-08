@@ -65,4 +65,7 @@
     <Build Include="Procedures\CSP_AjoutUtilisateur.sql" />
     <Build Include="CSF_GetSalt.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="CrowdFundingProject.Database.publish.xml" />
+  </ItemGroup>
 </Project>
